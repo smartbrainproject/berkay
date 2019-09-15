@@ -15,7 +15,6 @@ const db = knex({
     ssl: true
   }
 });
-gşit;
 
 app.use(bodyParser.json());
 app.use(cors());
