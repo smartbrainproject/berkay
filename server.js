@@ -11,12 +11,11 @@ const image = require("./controllers/image");
 const db = knex({
   client: "pg",
   connection: {
-    host: "postgresql-concave-54543",
-    user: "postgres",
-    password: "123456",
-    database: "smart-brain"
+    host: process.env.DATABASE_URL,
+    ssl: true
   }
 });
+gşit;
 
 app.use(bodyParser.json());
 app.use(cors());
